@@ -21,9 +21,9 @@ var Controles=
         numPantalla=1;
         game.load.image('Pantalla1', './Images/Pantalla1.png');
         game.load.image('Pantalla2', './Images/Pantalla2.png');
-        game.load.image('pantalla3', './Images/pantalla3.png');
-        game.load.image('pantalla4', './Images/pantalla4.png');
-        game.load.image('pantalla5', './Images/pantalla5.png');
+        game.load.image('Pantalla3', './Images/pantalla3.png');
+        game.load.image('Pantalla4', './Images/pantalla4.png');
+        game.load.image('Pantalla5', './Images/pantalla5.png');
 
         game.load.spritesheet('botonMenu', './Images/spritesheetMenu.png', 188, 68);
         game.load.spritesheet('botonSiguiente', './Images/spritesheetSiguiente.png', 188, 68);
