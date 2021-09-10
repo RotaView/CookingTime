@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookingTime</title>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.16.1/phaser.min.js"></script>
+        <script src="Menu.js"></script>
+        <script src="Controles.js"></script>
+        <script src="Creditos.js"></script>
+        <script src="Bomba.js"></script>
+        <script src="Level1.js"></script>
+</head>
+<body>
+    <SCRIPT> 
+        //Variables globales
+        var EmpezarMusicaMenu=0;
+        var EmpezarMusicaJuego=0;
+    </SCRIPT>
+    <script>
+    var game = new Phaser.Game(960, 960, Phaser.CANVAS, 'phaser-example');
+
+    //--Cargar googleWebFonts--
+    WebFontConfig = {
+        active: function () { game.time.events.add(Phaser.Timer.SECOND, createText, this); },
+        google: {
+            families: ['Press Start 2P']
+        }
+    };
+    //--Fin Cargar googleWebFonts--
+
+    game.state.add("Level1",Level1);
+    game.state.add("Menu",Menu);
+    game.state.add("Controles",Controles);
+    game.state.add("Creditos",Creditos);
+    //game.state.start("Level1",Level1);
+    game.state.start("Menu",Menu);
+
+
+    </script>
+
+</body>
+
+</html>
+
